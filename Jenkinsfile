@@ -7,7 +7,7 @@ node    {
     }
 
         stage("Package jar file with Maven"){
-            dir('UserRegistrationManagement'){
+            dir('new-repo'){
                 sh "mvn clean package -DskipTests=true"
             }
         }
